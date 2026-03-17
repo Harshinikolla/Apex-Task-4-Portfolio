@@ -1,0 +1,86 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+/* Main Layout using Grid */
+.main{
+display:grid;
+grid-template-columns:1fr 1fr;
+min-height:100vh;
+}
+
+/* Left Section */
+.left{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:#e3f2fd;  
+color:#333;
+padding:20px;
+}
+.left h1{
+margin-bottom:10px;
+color:#1565c0;
+}
+
+/* Right Section */
+.right{
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f9fbe7
+}
+
+/* Form */
+form{
+background:#ffffff;
+padding:25px;
+width:350px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+form h2{
+text-align:center;
+margin-bottom:15px;
+color:#444;
+}
+input, textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* Button */
+button{
+width:100%;
+padding:10px;
+background:#64b5f6;  /* light blue */
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+button:hover{
+background:#42a5f5;
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:10px;
+background:#e0e0e0;
+color:#333;
+}
+
+/* Responsive */
+@media(max-width:768px){
+.main{
+grid-template-columns:1fr;
+}
+}

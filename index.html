@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Style.css">
+<script src="script.js"></script>
+</head>
+<body>
+<div class="main">
+
+<!-- ---Left Side--- -->
+<div class="left">
+<h1>Welcome</h1>
+<p>You can send your details here.</p>
+</div>
+
+<!-- ---Right Side--- -->
+
+<div class="right">
+<form onsubmit="return validateForm()">
+<h2>Contact Form</h2>
+<input type="text" id="name" placeholder="Enter Name" required>
+<input type="email" id="email" placeholder="Enter Email" required>
+<input type="tel" id="phone" placeholder="Enter Phone" required>
+<textarea id="message" placeholder="Enter Message" required></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+<footer>
+© 2026 | Contact Form Project
+</footer>
+</body>
+</html>
